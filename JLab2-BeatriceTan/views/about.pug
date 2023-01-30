@@ -1,0 +1,22 @@
+extends layout 
+
+block append scripts 
+    //add more scripts to the scripts block from layout.pug
+    script(src="/about.js")
+
+block main-content 
+    div.hero
+        div.hero-title
+            h1.page-title inCase
+            h2 Your best case scenario
+            p Shop your dream case inCase.
+            a(href="/shop")
+                h4.label Shop Now
+
+    .content-wrapper 
+        h1.page-title About inCase
+            p.about Our quality materials are made up of 100% recycled plastics found from the ocean. These materials that are considered garbage have become a great problem in our world today.
+            p.about inCase has transformed these into durable and stylish cases. inCase guarantees protection for your screen to make sure your phone and tablets are 100% covered.
+            p.about Lastly, we donate 10% of our sale to Ocean Cleanup and Preservation Initiative Partners.
+
+            img.about(src="image/herophoto.jpeg", alt="Phone Cases", width="1150")

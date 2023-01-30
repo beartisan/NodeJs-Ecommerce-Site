@@ -1,0 +1,21 @@
+extends layout 
+
+block append scripts 
+    //add more scripts to the scripts block from layout.pug
+    script(src="/cart.js")
+
+block main-content 
+
+block main-content 
+    div.hero
+        div.hero-title
+            h1.page-title inCase
+            h2 Your best case scenario
+            p Shop your dream case inCase.
+            a(href="/shop")
+                h4.label Shop More
+            
+    div.cart
+        .content-wrapper 
+            h1.page-title Cart
+            p Your item has been added!

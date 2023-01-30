@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,700&family=Teko:wght@400;600;700&display=swap');
+
+/* Table of Contents
+***********************
+* 1. General Styles
+* 2. Header and Hero
+* 3. Main Content
+* 4. Photos-Content / Container-Case
+* 5. Active Links
+* 6. About us
+* 7. Footer
+
+*/
+
+
+/* 1. General Styles */
+html {
+    box-sizing:border-box;
+    font-family:'Roboto Condensed', sans-serif;
+    font-weight: 400;
+}
+
+*, *::before, *::after {
+    box-sizing:inherit;
+}
+
+body {
+    margin:0;
+    padding: 0; 
+}
+
+h2, p { 
+    font-family:'Roboto Condensed', sans-serif; }
+
+h1, h3, h4, h5, h6{
+    font-family: 'Open Sans',sans-serif;
+}
+
+/* 2. Header and Hero */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    gap: 1em;
+}
+
+#header a {
+    font-size: 20px;
+}
+
+#main-navigation li {
+    display:inline-block;
+    margin-right: 3em;
+}
+
+.hero-title{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 3em;
+    justify-content: center;
+    background-color: rgb(252, 207, 190);
+}
+
+
+/* 3. main container */
+.container-case, .label-case{
+    text-align: center;
+}
+
+.label-show{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+/* 4. photos-content */
+.phone-container, .ipad-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.phonecase-1, .ipadcase-1, .phonecase-2, .ipadcase-2, .phonecase-3, .ipadcase-3,
+.phonecase-4, .ipadcase-4, .phonecase-5, .ipadcase-5, .phonecase-6, .ipadcase-6{
+    border: 2px solid black;
+    padding: 1.4em;
+    margin: 0.4em;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
+}
+
+.addCart {
+    margin-top: 1.2em;
+    background:  rgb(252, 207, 190);
+    padding: 1px 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+h4.addCart:hover {
+    color:rgb(241, 64, 64);
+    font-weight: 700;
+}
+h4.addCart:active {
+    color:#2b2d42;
+    font-weight: 700;
+}
+
+
+
+/* 5. A Styles */
+
+a {
+    text-decoration: none;
+    color:rgb(47, 47, 47); 
+    position: relative; 
+    padding: 0 10px;
+}
+
+
+#main-navigation a:after{
+    content: "";
+    width: 0;
+    position: absolute;
+    height: 3px;
+    left:0;
+    background-color: darkcyan;
+    transition: 0.2s linear;
+    bottom: -10px;
+}
+
+#main-navigation  a:hover {
+    color: darkcyan;
+    font-weight: 600;
+}
+
+#main-navigation  a:hover::after{
+    width: 100%;
+}
+
+
+#main-navigation  a:visited{
+    color: rgb(47, 47, 47);
+    font-weight: 700;
+}
+
+.label-show:hover{
+    color: darkcyan;
+}
+
+/* .addCart:hover a{
+    background-color: rgb(246, 112, 112);
+} */
+
+/* 6. About Us */
+
+#about{
+    background-color: rgb(244, 252, 232);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+img.about{
+    margin: 0 auto;
+}
+
+p.about{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* 7. Footer */
+#footer{
+    background-color: #2b2d42;
+    color: #edf2f4;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+input{
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.btn {
+    background-color:  #2b2d42;
+    border: 2px solid rgb(252, 207, 190);
+    color: rgb(252, 207, 190);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    margin-left: 1em;
+}
+  
+.btn:hover{
+    background-color: rgb(252, 207, 190);
+    color: #2b2d42;
+}
+
+.copyright{
+    padding-top: 1em;
+}
